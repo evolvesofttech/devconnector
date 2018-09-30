@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Landing extends Component {
   render() {
@@ -12,8 +13,8 @@ export default class Landing extends Component {
         </p>
 
         <div className="landing-buttons">
-            <button className="waves-effect waves-light btn green">Sign Up</button>
-            <button className="waves-effect waves-light btn white btn-login">Login</button>
+            <Link to="/register" className="waves-effect waves-light btn green">Sign Up</Link>
+            <Link to="/login" className="waves-effect waves-light btn white btn-login">Login</Link>
         </div>
       </div>
     )

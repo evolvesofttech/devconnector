@@ -1,5 +1,22 @@
+html, body {
+    font-size: 0.9rem;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.error {
+    color: red !important;
+}
+
+.input-field {
+    margin-bottom: 0.5rem;
+}
+
 .page-footer {
     padding-top: 0;
+    text-align: center;
 }
 
 .landing {
@@ -29,4 +46,12 @@
 .btn-login {
     color: #000;
     margin-left: 10px;
+}
+
+.register-card {
+    margin-top: 30px;
+}
+
+.register-card .card-title {
+    text-align: center;
 }
