@@ -55,3 +55,8 @@ html, body {
 .register-card .card-title {
     text-align: center;
 }
+
+.user-avatar {
+    height: 30px;
+    vertical-align: middle;
+}

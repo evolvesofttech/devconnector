@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-export default class Landing extends Component {
+class Landing extends Component {
+
+  //componentDidMount
+  componentDidMount() {
+    if (this.props.auth.isAuthenticated) {
+        this.props.history.push('/dashboard');
+    }
+  }//componentDidMount
+
   render() {
     return (
       <div className="landing" style={{background:'url(images/landing.jpg) center center no-repeat/cover'}}>
@@ -20,3 +29,10 @@ export default class Landing extends Component {
     )
   }
 }
+
+const mapStateToProps = (state) => ({
+  auth:state.auth,
+  errors:state.errors
+});
+
+export default connect(mapStateToProps, null)(Landing);
