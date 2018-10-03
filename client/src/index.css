@@ -8,8 +8,16 @@ html, body {
   }
 }
 
+.show-sidebar {
+  transform: translateX(0%) !important;
+}
+
 .white {
   color: #000;
+}
+
+.text-white {
+  color: #fff;
 }
 
 .fa {

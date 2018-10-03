@@ -36,7 +36,7 @@ class ProfileItem extends Component {
 
                             <h5>Skills</h5>
                             {
-                                profile.skills.slice(0, 4).map((skill, index) => (
+                                profile.skills.slice(0, 10).map((skill, index) => (
                                     <div key={index} className="chip">
                                         {skill}
                                     </div>
